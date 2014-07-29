@@ -19,6 +19,14 @@ android {
     }
 }
 
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile(name: 'AdamLib', ext: 'aar')
 }
